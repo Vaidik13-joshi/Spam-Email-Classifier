@@ -19,7 +19,7 @@ data.columns = ["label", "message"]
 X = data["message"]
 y = data["label"].map({"ham": 0, "spam": 1})
 
-vectorizer = TfidfVectorizer()
+vectorizer = TfidfVectorizer(stop_words = 'english', ngram_range = (1,2))
 X_vectorized = vectorizer.fit_transform(X)
 
 model = MultinomialNB()
