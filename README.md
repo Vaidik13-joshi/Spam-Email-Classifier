@@ -8,6 +8,7 @@ A machine learning-based web application that classifies email messages as Spam 
 
 🔗 Try the app here:
 https://spam-email-classifier-n4vlkxpjzke42tcujuvelg.streamlit.app/
+This web app allows users to enter an email message and instantly classify it as Spam or Not Spam
 
 ---
 
