@@ -1,121 +1,115 @@
 📧 Spam Email Classifier
 
-A machine learning project that classifies emails as Spam or Not Spam (Ham) using TF-IDF vectorization and Naive Bayes algorithm.
+A machine learning-based web application that classifies email messages as Spam or Not Spam (Ham) using TF-IDF vectorization and Naive Bayes algorithm.
 
 ---
 
-🚀 Overview
+🚀 Live Demo
 
-This project demonstrates how machine learning can be applied to detect spam emails.
-It processes text data, converts it into numerical form, and trains a classification model to make predictions.
+🔗 Try the app here:
+https://spam-email-classifier-n4vlkxpjzke42tcujuvelg.streamlit.app/
 
 ---
 
-🧠 Technologies & Libraries Used
+🧠 Project Overview
+
+This project demonstrates how machine learning and text processing techniques can be used to detect spam emails. The application processes raw text input, converts it into numerical features, and predicts whether the message is spam or legitimate.
+
+---
+
+⚙️ Technologies Used
 
 - Python
 - NumPy
 - Pandas
 - Scikit-learn
+- Streamlit
+
+---
 
 🔍 Key Concepts
 
 - TF-IDF Vectorization
-- Naive Bayes Classifier
+- Naive Bayes Classification
 - Train-Test Split
-- Model Evaluation Metrics
-
----
-
-📂 Project Structure
-
-spam-email-classifier/
-│
-├── spam_classifier.ipynb   # Jupyter Notebook (with explanation & output)
-├── spam_classifier.py      # Python script version
-└── README.md
+- Text Classification
 
 ---
 
 📊 Dataset
 
-The dataset is loaded using an online URL.
-
-It contains labeled email messages categorized as:
-
-- Spam
-- Not Spam (Ham)
+- Dataset loaded from an online URL
+- Contains labeled messages:
+  - Spam
+  - Not Spam (Ham)
 
 ---
 
-⚙️ How It Works
+🏗️ Project Structure
 
-1. Load dataset using Pandas
-2. Preprocess text data
-3. Convert text into numerical features using TF-IDF
-4. Split data using train_test_split
-5. Train model using Naive Bayes
-6. Evaluate using:
-   - Accuracy Score
-   - Confusion Matrix
-   - Classification Report
+spam-email-classifier/
+│
+├── spam_classifier.ipynb   # Jupyter Notebook (analysis & development)
+├── spam_classifier.py      # Python script version
+├── app.py                  # Streamlit web application
+└── requirements.txt        # Dependencies
 
 ---
 
-▶️ How to Run
+▶️ How to Run Locally
 
-🔹 Option 1: Jupyter Notebook
+1. Install dependencies
 
-Open and run:
+pip install -r requirements.txt
 
-spam_classifier.ipynb
+2. Run the app
 
-🔹 Option 2: Python Script
-
-Install dependencies:
-
-pip install numpy pandas scikit-learn
-
-Run the file:
-
-python spam_classifier.py
+streamlit run app.py
 
 ---
 
-📈 Model Evaluation
+🌐 Web Application
 
-The model performance is evaluated using:
+The project is deployed as an interactive web app using Streamlit.
 
-- Accuracy Score
-- Confusion Matrix
-- Classification Report
+Users can:
 
-These metrics help measure how well the model classifies spam and non-spam emails.
+- Enter an email message
+- Click "Predict"
+- Instantly see whether it is Spam or Not Spam
+
+---
+
+📈 Model Details
+
+- Text is converted into numerical features using TF-IDF
+- A Naive Bayes classifier is trained on labeled data
+- The model predicts spam probability based on learned patterns
 
 ---
 
 💡 Example
 
 Input:
-"Congratulations! You have won a prize"
+Congratulations! You have won a prize
 
 Output:
-Spam
+🚫 Spam
 
 ---
 
 🎯 Conclusion
 
-This project shows how TF-IDF and Naive Bayes can be effectively used for spam detection tasks using text data.
+This project demonstrates a practical implementation of machine learning for spam detection and showcases how models can be deployed as interactive web applications.
 
 ---
 
 🔮 Future Improvements
 
-- Improve accuracy with advanced models
-- Use larger datasets
-- Deploy as a web application
-- Add GUI interface
+- Improve model accuracy with advanced algorithms
+- Save and reuse trained model (optimize performance)
+- Enhance UI design
+- Deploy with custom domain
 
 ---
 
